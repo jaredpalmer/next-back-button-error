@@ -15,7 +15,11 @@ class Index extends Component {
         <h1>People</h1>
         <ul>
           {this.props.people.map((r, i) => (
-            <li key={r.created}><Link href={`/person?id=${i + 1}`} as={`/person/${i + 1}`}><a>{r.name}</a></Link></li>
+            <li key={r.created}>
+              <Link href={`/person?id=${i + 1}`} as={`/person/${i + 1}`}>
+                <a>{r.name}</a>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

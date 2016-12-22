@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import fetch from 'isomorphic-fetch'
 
+// Use forward/back buttons to switch between master detail,
+// notice how `id` will be undefined in the GET requests.
 class Person extends Component {
   static async getInitialProps({ query: { id } }) {
     const res = await fetch(`http://swapi.co/api/people/${id}/`)
