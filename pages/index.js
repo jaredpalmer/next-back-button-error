@@ -12,7 +12,8 @@ class Index extends Component {
   render () {
     return (
       <div>
-        <h1>People</h1>
+        <p>Open up your browser console. Click a link below and then use back/forward buttons.</p>
+        <p>Notice how the param `id` is undefined in your GET requests?</p>
         <ul>
           {this.props.people.map((r, i) => (
             <li key={r.created}>
