@@ -7,7 +7,7 @@ const pathMatch = require('path-match')
 const app = next({ dir: '.', dev: true })
 const handle = app.getRequestHandler()
 const route = pathMatch()
-const matchPeople = route('/people/:id')
+const matchPeople = route('/person/:id')
 
 app.prepare()
 .then(() => {
